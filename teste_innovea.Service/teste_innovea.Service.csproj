@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Containers\ContaService.cs" />
+    <Compile Remove="Containers\LicaoDiaService.cs" />
+    <Compile Remove="Containers\SistemaUsuarioIntegracaoBusiness.cs" />
+    <Compile Remove="Dto\ComentarioLicaoDto.cs" />
+    <Compile Remove="Dto\LicaoDiaDto.cs" />
+    <Compile Remove="Dto\UsuarioDto.cs" />
+    <Compile Remove="_Ports\IContaService.cs" />
+    <Compile Remove="_Ports\ILicaoDiaService.cs" />
+    <Compile Remove="_Ports\ISistemaUsuarioIntegracaoBusiness.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\teste_innovea.Data\teste_innovea.Data.csproj" />
+  </ItemGroup>
+
+  
+</Project>

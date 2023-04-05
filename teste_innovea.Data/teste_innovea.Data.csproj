@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entity\Comentario.cs" />
+    <Compile Remove="Entity\Erro.cs" />
+    <Compile Remove="Entity\Informativo.cs" />
+    <Compile Remove="Entity\Licao.cs" />
+    <Compile Remove="Entity\Licaodia.cs" />
+    <Compile Remove="Entity\Parametro.cs" />
+    <Compile Remove="Entity\Usuario.cs" />
+    <Compile Remove="Entity\Video.cs" />
+    <Compile Remove="Mapping\ComentarioMap.cs" />
+    <Compile Remove="Mapping\ErroMap.cs" />
+    <Compile Remove="Mapping\InformativoMap.cs" />
+    <Compile Remove="Mapping\LicaodiaMap.cs" />
+    <Compile Remove="Mapping\LicaoMap.cs" />
+    <Compile Remove="Mapping\ParametroMap.cs" />
+    <Compile Remove="Mapping\UsuarioMap.cs" />
+    <Compile Remove="Mapping\VideoMap.cs" />
+    <Compile Remove="Repositories\Containers\ComentarioRepository.cs" />
+    <Compile Remove="Repositories\Containers\ErroRepository.cs" />
+    <Compile Remove="Repositories\Containers\InformativoRepository.cs" />
+    <Compile Remove="Repositories\Containers\LicaodiaRepository.cs" />
+    <Compile Remove="Repositories\Containers\LicaoRepository.cs" />
+    <Compile Remove="Repositories\Containers\ParametroRepository.cs" />
+    <Compile Remove="Repositories\Containers\UsuarioRepository.cs" />
+    <Compile Remove="Repositories\Containers\VideoRepository.cs" />
+    <Compile Remove="Repositories\_Ports\IComentarioRepository.cs" />
+    <Compile Remove="Repositories\_Ports\IErroRepository.cs" />
+    <Compile Remove="Repositories\_Ports\IInformativoRepository.cs" />
+    <Compile Remove="Repositories\_Ports\ILicaoDiaRepository.cs" />
+    <Compile Remove="Repositories\_Ports\ILicaoRepository.cs" />
+    <Compile Remove="Repositories\_Ports\IParametroRepository.cs" />
+    <Compile Remove="Repositories\_Ports\IUsuarioRepository.cs" />
+    <Compile Remove="Repositories\_Ports\IVideoRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="2.0.0-preview1-final" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.0" />
+  </ItemGroup>
+  
+</Project>
